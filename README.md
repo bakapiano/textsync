@@ -1,4 +1,4 @@
-### 简介
+# 简介
 利用evernote接口实现的文本同步脚本
 ```
 usage: main.py [-h] {init,push,pushdir,pull,pullbox,list,remove,drop} ...
@@ -17,14 +17,14 @@ optional arguments:
     remove              删除指定id的文本
     drop                删除指定仓库
 ```
-### 准备工作
+# 准备工作
 1.安装evernote sdk for python
 ```
 pip install evernote
 ```
 2.从[Evernote开发者](https://sandbox.evernote.com/ "Evernote开发者")获取一个开发Token
-### 命令详细
-####init
+# 命令详细
+##init
 ```
 usage: main.py init [-h] name
 
@@ -36,7 +36,7 @@ positional arguments:
 optional arguments:
   -h, --help  show this help message and exit
 ```
-####push
+##push
 ```
  usage: main.py push [-h] [-b BOX | -n NAME] [files [files ...]]
 
@@ -50,7 +50,7 @@ optional arguments:
   -b BOX, --box BOX     仓库id
   -n NAME, --name NAME  仓库名称
   ```
-####pushdir
+##pushdir
 ```
 usage: main.py pushdir [-h] [-b BOX | -n NAME] dir
 
@@ -64,7 +64,7 @@ optional arguments:
   -b BOX, --box BOX     仓库id
   -n NAME, --name NAME  仓库名称
 ```
-####pull
+##pull
 ```
 usage: main.py pull [-h] [-b BOX | -n NAME] [-t [TEXT [TEXT ...]] | -tn
                     [TEXTNAME [TEXTNAME ...]]]
@@ -84,7 +84,7 @@ optional arguments:
   -tn [TEXTNAME [TEXTNAME ...]], --textname [TEXTNAME [TEXTNAME ...]]
                         文本名称
 ```
-###pullbox
+##pullbox
 ```
 拉取仓库中的所有文本到本地
 
@@ -96,7 +96,7 @@ optional arguments:
   -b BOX, --box BOX     仓库id
   -n NAME, --name NAME  仓库名称
 ```
-###list
+##list
 ```
 usage: main.py list [-h] [-b BOX | -n NAME]
 
@@ -107,7 +107,7 @@ optional arguments:
   -b BOX, --box BOX     仓库id
   -n NAME, --name NAME  仓库名称
 ```
-###drop
+##drop
 ```
 usage: main.py drop [-h] [-b BOX | -n NAME]
 
@@ -118,7 +118,7 @@ optional arguments:
   -b BOX, --box BOX     仓库id
   -n NAME, --name NAME  仓库名称
 ```
-###remove
+##remove
 ```
 usage: main.py remove [-h] text
 
@@ -130,3 +130,5 @@ positional arguments:
 optional arguments:
   -h, --help  show this help message and exit
 ```
+##TODO
+滋磁Linux环境下使用
